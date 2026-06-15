@@ -20,7 +20,7 @@ describe('Pruebas para el Middleware de Verificación de API Key', () => {
     next = jest.fn();
   });
 
-  // ESCENARIO A y B (Tu middleware maneja ambos casos con el mismo error)
+  // ESCENARIO A y B 
   test('Debe responder con 401 si la cabecera x-api-key está ausente o es incorrecta', () => {
     req.headers = { 'x-api-key': 'clave-incorrecta' };
 
