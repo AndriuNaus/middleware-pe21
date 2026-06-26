@@ -17,7 +17,7 @@ describe('Pruebas para el Request Logger Middleware', () => {
     // El mock de res necesita registrar el evento 'finish'
     res = {
       statusCode: 200,
-      on: jest.fn()
+      on: jest.fn() as any
     };
 
     next = jest.fn();
